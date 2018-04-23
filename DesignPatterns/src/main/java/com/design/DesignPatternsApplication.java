@@ -2,7 +2,6 @@ package com.design;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.client.RestTemplate;
 
 import com.design.strategy.RestWithoutProxyStrategy;
 import com.design.strategy.service.RestConnector;
@@ -13,7 +12,11 @@ public class DesignPatternsApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DesignPatternsApplication.class, args);
 		
+		// this should be set based on condition
 		RestConnector restConnector = new RestConnector(new RestWithoutProxyStrategy());
-		RestTemplate restTemp = restConnector.getRestTemplateBasedOnStrategy();
+		
+		String restTemp = restConnector.getRestTemplateBasedOnStrategy();
+		
+		System.out.println("Template:"+ restTemp);
 	}
 }

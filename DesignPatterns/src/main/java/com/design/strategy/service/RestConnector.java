@@ -1,7 +1,5 @@
 package com.design.strategy.service;
 
-import org.springframework.web.client.RestTemplate;
-
 import com.design.strategy.IRestStrategy;
 
 public class RestConnector {
@@ -12,7 +10,7 @@ public class RestConnector {
 		this.restStrategy = restStrategy;
 	}
 	
-	public RestTemplate getRestTemplateBasedOnStrategy() {
+	public String getRestTemplateBasedOnStrategy() {
 		return restStrategy.createRestTemplate();
 	}
 }
