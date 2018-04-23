@@ -4,7 +4,7 @@ What does Strategy mean ?
 “a plan of action designed to achieve a long-term or overall aim.”
 
 Lets think in terms of Software design !!
-STRATEGIES = DIFFERENT ALGORITHMS
+<i>STRATEGIES = DIFFERENT ALGORITHMS </i>
 
 Questions to consider before thinking about this pattern
 
