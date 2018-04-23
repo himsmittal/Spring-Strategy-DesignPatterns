@@ -1,4 +1,4 @@
-Strategy Design Pattern
+<b>Strategy Design Pattern </b>
 
 What does Strategy mean ?
 “a plan of action designed to achieve a long-term or overall aim.”
@@ -14,7 +14,7 @@ Is your code Open for Extension ?
 
 If the answer is yes for any of the above questions , Strategy Pattern might be a good option for you.
 
-Definition : The strategy pattern is a behavioral pattern that enables selecting an algorithm at runtime. Instead of implementing a single algorithm directly , we can pass the algorithm at run time from a family of algorithms.
+<b>Definition </b>: The strategy pattern is a behavioral pattern that enables selecting an algorithm at runtime. Instead of implementing a single algorithm directly , we can pass the algorithm at run time from a family of algorithms.
 
 For Instance , a application that uses REST to call apis might need to choose from different REST Templates(Ex:  Proxy Enabled, SSL Configured) based on the build env( dev, test , prod). This might not be known until run time . 
 
